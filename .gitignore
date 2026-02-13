@@ -1,0 +1,14 @@
+node_modules/
+
+.vscode/
+.idea/
+
+.vitepress/cache/
+.vitepress/dist/
+
+AGENTS.md
+IFLOW.md
+CLAUDE.md
+.gemini/
+.claude/
+.ai/
