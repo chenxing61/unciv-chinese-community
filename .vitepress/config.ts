@@ -17,12 +17,12 @@ export default defineConfig({
 
   head: [
     // ['link', { rel: 'icon', href: 'CoeHarMod/favicon.ico' }],
-    ['link', { rel: 'icon', href: '/public/Unciv.ico' }],
+    ['link', { rel: 'icon', href: '/Unciv.ico' }],
   ],
 
   themeConfig: {
     // logo: '/logo.webp',
-    logo: '/public/Unciv.ico',
+    logo: '/Unciv.ico',
 
     nav: [
       { text: '首页', link: '/' },
