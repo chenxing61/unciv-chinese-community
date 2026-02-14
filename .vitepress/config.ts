@@ -11,16 +11,18 @@ export default defineConfig({
     }
   },
 
-  title: 'CoeHarMod',
-  description: '和合共生 - Unciv 大型规则集模组',
+  title: 'Unciv中文社区',
+  description: 'Unciv Chinese Community',
   lang: 'zh-CN',
 
   head: [
-    ['link', { rel: 'icon', href: '/CoeHarMod/favicon.ico' }],
+    // ['link', { rel: 'icon', href: 'CoeHarMod/favicon.ico' }],
+    ['link', { rel: 'icon', href: '/public/Unciv.ico' }],
   ],
 
   themeConfig: {
-    logo: '/logo.webp',
+    // logo: '/logo.webp',
+    logo: '/public/Unciv.ico',
 
     nav: [
       { text: 'GitHub', link: 'https://github.com/AutumnPizazz/CoeHarMod' },

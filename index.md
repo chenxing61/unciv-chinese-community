@@ -6,7 +6,7 @@ hero:
   text: 开源策略游戏
   tagline: 共建、共享、共玩的中文社区
   image:
-    src: /banner.webp
+    src: /public/UncivPNG.png
     alt: Unciv
   actions:
     - theme: brand
