@@ -25,7 +25,6 @@ export default defineConfig({
     logo: '/public/Unciv.ico',
 
     nav: [
-      { text: 'GitHub', link: 'https://github.com/AutumnPizazz/CoeHarMod' },
       { text: '首页', link: '/' },
       {
         text: '原版专区',
@@ -36,10 +35,12 @@ export default defineConfig({
         ]
       },
       {
-        text: 'CoeHarMod专区',
+        text: '模组专区',
         items: [
-          { text: '更新记录', link: '/CoeHarMod专区/更新日志' },
-          { text: '更新计划', link: '/CoeHarMod专区/更新计划' }
+          {
+            text: 'CoeHarMod', 
+            link: '/模组专区/CoeHarMod' 
+          },
         ]
       }
     ],
@@ -61,22 +62,23 @@ export default defineConfig({
         ]
       },
       {
-        text: 'CoeHarMod专区',
+        text: '模组专区',
         collapsed: true,
         items: [
-          { text: '更新记录', link: '/CoeHarMod专区/更新日志' },
-          { text: '更新计划', link: '/CoeHarMod专区/更新计划' }
+          {
+            text: 'CoeHarMod', 
+            collapsed: true,
+            items: [
+              { text: '更新日志', link: '/模组专区/CoeHarMod/更新日志' },
+              { text: '更新计划', link: '/模组专区/CoeHarMod/更新日志/更新计划' }
+            ]
+          },
         ]
-      },
-      {
-        text: '其他模组专区',
-        collapsed: true,
-        items: []
       }
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/AutumnPizazz/CoeHarMod' }
+      { icon: 'github', link: 'https://github.com/AutumnPizazz/unciv-chinese-community' }
     ],
 
     search: {
