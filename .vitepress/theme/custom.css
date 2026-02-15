@@ -377,6 +377,40 @@
   .vp-doc h2 {
     font-size: 1.5rem;
   }
+
+  /* 移动端侧边栏优化 */
+  .VPSidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .VPSidebar .item {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+
+  .VPSidebar .item a,
+  .VPSidebar .item .text {
+    min-height: 44px;
+    line-height: 44px;
+  }
+
+  /* 确保移动端链接可点击 */
+  .VPSidebar .curtain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+  }
 }
 
 /* 深色模式优化 */

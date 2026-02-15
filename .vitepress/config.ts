@@ -55,7 +55,7 @@ export default defineConfig({
             items: [
               { text: '模组介绍', link: '/模组专区/CoeHarMod/' },
               { text: '更新日志', link: '/模组专区/CoeHarMod/更新日志/' },
-              { text: '更新计划', link: '/模组专区/CoeHarMod/更新日志/更新计划' }
+              { text: '更新计划', link: '/模组专区/CoeHarMod/更新日志/更新计划/' }
             ]
           },
         ]
