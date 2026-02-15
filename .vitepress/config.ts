@@ -12,42 +12,26 @@ export default defineConfig({
   },
 
   title: 'Unciv中文社区',
-  description: 'Unciv Chinese Community',
+  description: 'Unciv Chinese Community - 开源策略游戏的中文社区',
   lang: 'zh-CN',
 
   head: [
-    // ['link', { rel: 'icon', href: 'CoeHarMod/favicon.ico' }],
     ['link', { rel: 'icon', href: '/Unciv.ico' }],
+    ['meta', { name: 'theme-color', content: '#d98c3a' }],
   ],
 
   themeConfig: {
-    // logo: '/logo.webp',
     logo: '/Unciv.ico',
 
     nav: [
       { text: '首页', link: '/' },
-      {
-        text: '原版专区',
-        items: [
-          { text: 'Unciv基础术语', link: '/原版专区/Unciv基础术语' },
-          { text: '众神与国王入门指南', link: '/原版专区/众神与国王入门指南' },
-          { text: '军事实力计算', link: '/原版专区/军事实力计算方式' }
-        ]
-      },
-      {
-        text: '模组专区',
-        items: [
-          {
-            text: 'CoeHarMod', 
-            link: '/模组专区/CoeHarMod' 
-          },
-        ]
-      }
+      { text: '文档', link: '/原版专区/Unciv基础术语' },
+      { text: '模组', link: '/模组专区/CoeHarMod' }
     ],
 
     sidebar: [
       {
-        text: '文档',
+        text: '导航',
         items: [
           { text: '首页', link: '/' }
         ]
@@ -56,9 +40,9 @@ export default defineConfig({
         text: '原版专区',
         collapsed: true,
         items: [
-          { text: 'Unciv基础术语', link: '/原版专区/Unciv基础术语' },
-          { text: '众神与国王入门指南', link: '/原版专区/众神与国王入门指南' },
-          { text: '军事实力计算', link: '/原版专区/军事实力计算方式' }
+          { text: '基础术语', link: '/原版专区/Unciv基础术语' },
+          { text: '入门指南', link: '/原版专区/众神与国王入门指南' },
+          { text: '军事实力', link: '/原版专区/军事实力计算方式' }
         ]
       },
       {
@@ -66,9 +50,10 @@ export default defineConfig({
         collapsed: true,
         items: [
           {
-            text: 'CoeHarMod', 
+            text: 'CoeHarMod',
             collapsed: true,
             items: [
+              { text: '模组介绍', link: '/模组专区/CoeHarMod' },
               { text: '更新日志', link: '/模组专区/CoeHarMod/更新日志' },
               { text: '更新计划', link: '/模组专区/CoeHarMod/更新日志/更新计划' }
             ]
@@ -103,7 +88,8 @@ export default defineConfig({
     },
 
     outline: {
-      label: '页面导航'
+      label: '页面导航',
+      level: [2, 3]
     },
 
     docFooter: {
@@ -113,6 +99,19 @@ export default defineConfig({
 
     darkModeSwitchLabel: '主题',
     sidebarMenuLabel: '菜单',
-    returnToTopLabel: '回到顶部'
+    returnToTopLabel: '回到顶部',
+
+    editLink: {
+      pattern: 'https://github.com/AutumnPizazz/unciv-chinese-community/edit/main/:path',
+      text: '在 GitHub 上编辑此页'
+    },
+
+    lastUpdated: {
+      text: '最后更新于',
+      formatOptions: {
+        dateStyle: 'short',
+        timeStyle: 'short'
+      }
+    }
   }
 })
