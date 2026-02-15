@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: 开始探索
-      link: /原版专区/Unciv基础术语
+      link: /原版专区/Unciv基础术语/
     - theme: alt
       text: GitHub
       link: https://github.com/AutumnPizazz/unciv-chinese-community
@@ -19,10 +19,10 @@ hero:
 features:
   - title: 原版游戏指南
     details: 无DLC与众神与国王环境下玩法思路讨论
-    link: /原版专区/Unciv基础术语
+    link: /原版专区/Unciv基础术语/
   - title: 模组专区
     details: 分享优质模组
-    link: /模组专区/CoeHarMod
+    link: /模组专区/CoeHarMod/
   - title: 技术讨论
     details: 分享模组制作教程，游戏源码解析
 
@@ -61,13 +61,13 @@ features:
 
 如果您是新玩家，建议按照以下顺序阅读：
 
-1. [Unciv 基础术语](/原版专区/Unciv基础术语) - 了解游戏基本概念
-2. [众神与国王入门指南](/原版专区/众神与国王入门指南) - 学习游戏玩法
-3. [军事实力计算方式](/原版专区/军事实力计算方式) - 掌握战斗技巧
+1. [Unciv 基础术语](/原版专区/Unciv基础术语/) - 了解游戏基本概念
+2. [众神与国王入门指南](/原版专区/众神与国王入门指南/) - 学习游戏玩法
+3. [军事实力计算方式](/原版专区/军事实力计算方式/) - 掌握战斗技巧
 
 如果您对模组感兴趣，可以查看：
-- [CoeHarMod 模组介绍](/模组专区/CoeHarMod) - 了解社区维护的大型规则集模组
-- [更新日志](/模组专区/CoeHarMod/更新日志) - 查看模组最新动态
+- [CoeHarMod 模组介绍](/模组专区/CoeHarMod/) - 了解社区维护的大型规则集模组
+- [更新日志](/模组专区/CoeHarMod/更新日志/) - 查看模组最新动态
 
 ---
 

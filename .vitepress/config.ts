@@ -25,8 +25,8 @@ export default defineConfig({
 
     nav: [
       { text: '首页', link: '/' },
-      { text: '文档', link: '/原版专区/Unciv基础术语' },
-      { text: '模组', link: '/模组专区/CoeHarMod' }
+      { text: '文档', link: '/原版专区/Unciv基础术语/' },
+      { text: '模组', link: '/模组专区/CoeHarMod/' }
     ],
 
     sidebar: [
@@ -40,9 +40,9 @@ export default defineConfig({
         text: '原版专区',
         collapsed: true,
         items: [
-          { text: '基础术语', link: '/原版专区/Unciv基础术语' },
-          { text: '入门指南', link: '/原版专区/众神与国王入门指南' },
-          { text: '军事实力', link: '/原版专区/军事实力计算方式' }
+          { text: '基础术语', link: '/原版专区/Unciv基础术语/' },
+          { text: '入门指南', link: '/原版专区/众神与国王入门指南/' },
+          { text: '军事实力', link: '/原版专区/军事实力计算方式/' }
         ]
       },
       {
@@ -53,8 +53,8 @@ export default defineConfig({
             text: 'CoeHarMod',
             collapsed: true,
             items: [
-              { text: '模组介绍', link: '/模组专区/CoeHarMod' },
-              { text: '更新日志', link: '/模组专区/CoeHarMod/更新日志' },
+              { text: '模组介绍', link: '/模组专区/CoeHarMod/' },
+              { text: '更新日志', link: '/模组专区/CoeHarMod/更新日志/' },
               { text: '更新计划', link: '/模组专区/CoeHarMod/更新日志/更新计划' }
             ]
           },
