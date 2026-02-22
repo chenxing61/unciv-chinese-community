@@ -42,7 +42,8 @@ export default defineConfig({
         items: [
           { text: '基础术语', link: '/原版专区/Unciv基础术语/' },
           { text: '入门指南', link: '/原版专区/众神与国王入门指南/' },
-          { text: '自主左二前应该做什么', link: '/原版专区/自主左二前应该做什么/' }
+          { text: '自主左二前应该做什么', link: '/原版专区/自主左二前应该做什么/' },
+          { text: 'Unciv鳇脯菌校：全局篇', link: '/原版专区/Unciv鳇脯菌校/' }
         ]
       },
       {
