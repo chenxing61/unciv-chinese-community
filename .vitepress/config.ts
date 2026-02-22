@@ -42,7 +42,15 @@ export default defineConfig({
         items: [
           { text: '基础术语', link: '/原版专区/Unciv基础术语/' },
           { text: '入门指南', link: '/原版专区/众神与国王入门指南/' },
-          { text: '军事实力', link: '/原版专区/军事实力计算方式/' }
+          { text: '自主左二前应该做什么', link: '/原版专区/自主左二前应该做什么/' }
+        ]
+      },
+      {
+        text: '技术专区',
+        collapsed: true,
+        items: [
+          { text: '军事实力计算方式', link: '/技术专区/军事实力计算方式/' },
+          { text: '文明积分计算', link: '/技术专区/文明积分计算/' }
         ]
       },
       {
