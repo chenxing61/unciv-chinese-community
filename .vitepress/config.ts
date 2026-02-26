@@ -26,7 +26,8 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '文档', link: '/原版专区/Unciv基础术语/' },
-      { text: '模组', link: '/模组专区/CoeHarMod/' }
+      { text: '模组', link: '/模组专区/CoeHarMod/' },
+      { text: '模组开发', link: '/模组开发/模组开发入门/' }
     ],
 
     sidebar: [
@@ -68,6 +69,20 @@ export default defineConfig({
               { text: '更新计划', link: '/模组专区/CoeHarMod/更新日志/更新计划/' }
             ]
           },
+        ]
+      },
+      {
+        text: '模组开发',
+        collapsed: true,
+        items: [
+          { text: '模组开发入门', link: '/模组开发/模组开发入门/' },
+          { text: '创建新文明', link: '/模组开发/创建新文明/' },
+          { text: 'Uniques 系统', link: '/模组开发/Uniques 系统/' },
+          { text: '图像和音频', link: '/模组开发/图像和音频/' },
+          { text: '自定义地形集', link: '/模组开发/自定义地形集/' },
+          { text: '场景编辑', link: '/模组开发/场景编辑/' },
+          { text: '类型检查', link: '/模组开发/类型检查/' },
+          { text: 'Mod 文件结构', link: '/模组开发/Mod 文件结构/' }
         ]
       }
     ],
