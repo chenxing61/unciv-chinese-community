@@ -4,9 +4,7 @@ title: Uniques 系统
 
 # Uniques 系统
 
-Uniques 的概述可以在[这里](https://github.com/yairm210/Unciv/blob/master/docs/Developers/Uniques.md)找到
-
-简单的 unique 参数通过鼠标悬停进行解释。复杂的参数在[Unique 参数类型](unique-parameters.md)中解释
+简单的 unique 参数通过鼠标悬停进行解释。复杂的参数在[Unique 参数类型](Unique 参数.md)中解释
 
 ## 概述
 
@@ -117,7 +115,6 @@ Unciv 包含一个"规则集验证器"，可以检查你的 Uniques 是否正确
 
 ## 更多信息
 
-- [Unique 参数类型详细说明](unique-parameters.md)
-- [Uniques 完整列表](https://github.com/yairm210/Unciv/blob/master/docs/Modders/uniques.md)（自动生成）
-- [条件 Uniques](https://github.com/yairm210/Unciv/blob/master/docs/Modders/uniques.md#conditional-uniques)
-- [触发条件 Uniques](https://github.com/yairm210/Unciv/blob/master/docs/Modders/uniques.md#triggercondition-uniques)
+- [Unique 参数类型详细说明](Unique 参数.md)
+- [条件 Uniques](条件 Uniques.md)
+- [触发条件 Uniques](触发条件 Uniques.md)
