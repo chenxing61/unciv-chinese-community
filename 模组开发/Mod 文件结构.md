@@ -41,7 +41,7 @@ title: Mod 文件结构
   - [Tutorials.json](#tutorialsjson)
   - [VictoryTypes.json](#victorytypesjson)
 - [属性](#属性)
-- [声音](../图像和音频.md#声音)
+- [声音](图像和音频.md#声音)
 - [Civilopedia 文本](#civilopedia-文本)
 
 ## JSON 文件概述
@@ -134,17 +134,17 @@ title: Mod 文件结构
 
 整个字符串（不包括所有 `<>` 分隔符内的条件或触发及其分隔空格，以及不包括占位符但包括它们的 `[]` 分隔符）用于查找 Unique 的实现。
 
-可选的 `[占位符]`的内容取决于实现，它们是修改效果的参数，在[Unique 参数](unique-parameters.md)中描述。
+可选的 `[占位符]`的内容取决于实现，它们是修改效果的参数，在[Unique 参数](Unique 参数.md)中描述。
 
 所有 `<条件或触发>`都是可选的（但如果使用，分隔它们的空格是必需的），并且每个都依次遵循 Unique 结构规则，用于 `<>` 尖括号之间的部分，包括可能的占位符，但不包括嵌套条件。
 
 示例：`"uniques":["[+1 Gold] <with a garrison>"]` 在建筑上——几乎与 `"gold":1` 属性做同样的事情，除了它只在城市有驻军时应用。在此示例中，`[]` 和"with a garrison"是 Unciv 用于查找两个 Uniques 的键，一个效果（类型 `Stats`）和一个条件（类型 `ConditionalWhenGarrisoned`）。
 
-Unciv 中实现的所有 Unique"类型"都在 [uniques](uniques.md) 中自动记录。还要注意[条件](uniques.md#conditional-uniques)和[触发条件](uniques.md#triggercondition-uniques)的单独部分。
+Unciv 中实现的所有 Unique"类型"都在 [Uniques 系统](Uniques 系统.md) 中自动记录。还要注意[条件](条件 Uniques.md)和[触发条件](触发条件 Uniques.md)的单独部分。
 
 与这些条目之一（逐字包括大小写！）不对应的 Uniques 称为"无类型"，将没有**直接**效果，并可能导致"规则集验证器"显示警告（参见选项标签"定位模组错误"，它也在开始新游戏时运行）。
 
-"无类型"Uniques 的合法用途是它们作为可以在其他地方被识别的**过滤器**中的标记（例如，原版规则集中使用的"Aircraft"作为[单位过滤器](unique-parameters.md#baseunitfilter)）。
+"无类型"Uniques 的合法用途是它们作为可以在其他地方被识别的**过滤器**中的标记（例如，原版规则集中使用的"Aircraft"作为[单位过滤器](Unique 参数.md#baseunitfilter)）。
 
 这种用法被"规则集验证器"识别，并且不会标记为无效——但过滤 Unique 也必须使用**无占位符或条件**才能通过测试。
 
@@ -284,6 +284,6 @@ Civilopedia 文本通过翻译系统处理，使用 `.properties` 文件。
 
 ## 相关资源
 
-- [JSON Schema 文件](../类型检查.md)
-- [Uniques 系统](uniques.md)
-- [Unique 参数](unique-parameters.md)
+- [类型检查](类型检查.md)
+- [Uniques 系统](Uniques 系统.md)
+- [Unique 参数](Unique 参数.md)

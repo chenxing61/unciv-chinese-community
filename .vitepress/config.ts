@@ -26,7 +26,6 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '文档', link: '/原版专区/Unciv基础术语/' },
-      { text: '模组', link: '/模组专区/CoeHarMod/' }
     ],
 
     sidebar: [
