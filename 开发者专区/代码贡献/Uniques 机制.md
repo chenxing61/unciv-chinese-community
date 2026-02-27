@@ -16,5 +16,5 @@ Uniques 是 Unciv 的核心机制，用于定义游戏效果。
 
 ## 相关文档
 
-- [Uniques 系统](/模组开发/Uniques 系统/)
-- [Unique 参数](/模组开发/Unique 参数/)
+- [Uniques 系统](/开发者专区/模组开发/Uniques 系统/)
+- [Unique 参数](/开发者专区/模组开发/Unique 参数/)
