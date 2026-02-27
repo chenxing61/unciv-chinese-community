@@ -45,18 +45,18 @@ title: 地图相关 JSON 文件
 
 每个改良设施具有以下结构：
 
-| 属性                     | 类型            | 默认值  | 说明                                                                                                                                                                                            |
-|---------------------------|-----------------|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| name                      | String          | 必需     | [^A]                                                                                                                                                                                            |
-| terrainsCanBeBuiltOn      | List of Strings | 空       | 可以建造此改良设施的地形 [^B]。可移除的地形特征需要在建造改良设施之前移除 [^C]。必须在 [Terrains.json](#terrainsjson) 中                                                                              |
-| techRequired              | String          | none     | 建造此改良设施所需的技术名称                                                                                                                                                                   |
-| replaces                  | String          | none     | 应被此改良设施替换的改良设施的名称。必须在 [TileImprovements.json](#tileimprovementsjson) 中                                                                                                       |
-| uniqueTo                  | String          | none     | 此改良设施唯一的国家的名称                                                                                                                                                                      |
-| [`<stats>`](#统计数据)    | Integer         | 0        | 地块的每回合加成收益                                                                                                                                                                            |
-| turnsToBuild              | Integer         | -1       | 工人建造此改良设施花费的回合数。如果为 -1，则改良设施不可建造 [^D]。如果为 0，则改良设施始终在一个回合内建造                                                                                             |
-| uniques                   | List of Strings | 空       | 此改良设施具有的[独特能力](../Unique能力列表.md)列表                                                                                                                                              |
-| shortcutKey               | String          | none     | 键盘绑定。目前，只允许单个字符（没有功能键或 Ctrl 组合）                                                                                                                                           |
-| civilopediaText           | List            | 空       | 请参阅 [civilopediaText 章节](其他JSON文件.md#civilopedia-text)                                                                                                                                   |
+| 属性 | 类型 | 默认值 | 说明 |
+|------|------|--------|------|
+| name | String | 必需 | [^A] |
+| terrainsCanBeBuiltOn | List of Strings | 空 | 可以建造此改良设施的地形 [^B]。可移除的地形特征需要在建造改良设施之前移除 [^C]。必须在 [Terrains.json](#terrainsjson) 中 |
+| techRequired | String | none | 建造此改良设施所需的技术名称 |
+| replaces | String | none | 应被此改良设施替换的改良设施的名称。必须在 [TileImprovements.json](#tileimprovementsjson) 中 |
+| uniqueTo | String | none | 此改良设施唯一的国家的名称 |
+| [`<stats>`](#统计数据) | Integer | 0 | 地块的每回合加成收益 |
+| turnsToBuild | Integer | -1 | 工人建造此改良设施花费的回合数。如果为 -1，则改良设施不可建造 [^D]。如果为 0，则改良设施始终在一个回合内建造 |
+| uniques | List of Strings | 空 | 此改良设施具有的[独特能力](../Unique能力列表.md)列表 |
+| shortcutKey | String | none | 键盘绑定。目前，只允许单个字符（没有功能键或 Ctrl 组合） |
+| civilopediaText | List | 空 | 请参阅 [civilopediaText 章节](其他JSON文件.md#civilopedia-text) |
 
 [^A]: 特殊改良设施：Road、Railroad、Remove \*、Cancel improvement order、City ruins、City center、Barbarian encampment - 这些名称具有硬编码的特殊含义。
 [^B]: 具有空 `terrainsCanBeBuiltOn` 列表和正 `turnsToBuild` 值的改良设施只能建造在具有 `improvedBy` 或包含相应改良设施的 `improvement` 的[资源](#tileresourcesjson)上。
@@ -118,20 +118,20 @@ title: 地图相关 JSON 文件
 
 | Unique | 参数 |
 |--------|------|
-| Free [] found in the ruins | 单位的名称将填充到通知中，包括该国家的独特单位 |
-| [] population in a random city | 人口添加到的城市的名称将填充到通知中 |
-| Gain []-[] [] | 获得的统计数据的确切数量将填充到通知中 |
-| [] free random reasearchable Tech(s) from the [] | 通知必须具有等于以这种方式授予的科技数量的占位符。这些免费科技中的每一个名称都将填充到通知中 |
-| Gain enough Faith for a Pantheon | 获得的信仰数量填充到通知中 |
-| Gain enough Faith for []% of a Great Prophet | 获得的信仰数量填充到通知中 |
+| `Free [] found in the ruins` | 单位的名称将填充到通知中，包括该国家的独特单位 |
+| `[] population in a random city` | 人口添加到的城市的名称将填充到通知中 |
+| `Gain []-[] []` | 获得的统计数据的确切数量将填充到通知中 |
+| `[] free random reasearchable Tech(s) from the []` | 通知必须具有等于以这种方式授予的科技数量的占位符。这些免费科技中的每一个名称都将填充到通知中 |
+| `Gain enough Faith for a Pantheon` | 获得的信仰数量填充到通知中 |
+| `Gain enough Faith for []% of a Great Prophet` | 获得的信仰数量填充到通知中 |
 
 ### 特定的 uniques
 
 可以添加几个独特能力到古代遗迹效果中以修改何时可以赚取它们。这些是：
 
-- "Only available after [amount] turns"
-- "Only available <when religion is enabled>"
-- "Hidden after a great prophet has been earned"
+- `Only available after [amount] turns`
+- `Only available <when religion is enabled>`
+- `Hidden after a great prophet has been earned`
 
 ## [地形集特定 json](../自定义地形集.md)
 
