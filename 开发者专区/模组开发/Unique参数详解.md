@@ -415,7 +415,7 @@ cityFilters 允许我们选择受此 unique 影响的城市范围：
     - 示例：`Only available <when number of [Owned [Farm] Tiles] is more than [0]>`
 - `[tileFilter] Tiles`
     - 示例：`Only available <when number of [[Desert] Tiles] is more than [0]>`
-- 资源名称 - 来自 [TileResources.json](地图相关JSON文件.md#tileresourcesjson)
+- 资源名称 - 来自 [TileResources.json](模组文件结构/地图相关JSON文件.md#tileresourcesjson)
     - 示例：`Only available <when number of [Iron] is more than [0]>`
     - 可以是城市统计或文明统计，取决于 unique 在何处使用
     - 例如：如果 unique 放置在建筑上，则检索的资源将是城市的。如果放置在政策上，它们将是文明的。
