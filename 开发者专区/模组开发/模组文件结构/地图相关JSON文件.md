@@ -12,22 +12,22 @@ title: 地图相关 JSON 文件
 
 每个地形条目具有以下结构：
 
-| 属性                  | 类型                                                                | 默认值  | 说明                                                                                          |
-|------------------------|---------------------------------------------------------------------|----------|------------------------------------------------------------------------------------------------|
-| name                   | String                                                              | 必需     | [^A]                                                                                           |
-| type                   | Enum                                                                | 必需     | Land、Water、TerrainFeature、NaturalWonder [^B]                                                  |
-| occursOn               | List of Strings                                                     | none     | 仅适用于地形特征和自然奇观：可以放置在其上的基础地形                                           |
-| turnsInto              | String                                                              | none     | 仅适用于自然奇观：可选的强制性基础地形 [^C]                                                     |
-| weight                 | Integer                                                             | 10       | 仅适用于自然奇观：被地图生成器选中的_相对_权重                                                 |
-| [`<stats>`](#一般统计)  | Float                                                               | 0        | 地块的每回合收益或加成收益                                                                     |
-| overrideStats          | Boolean                                                             | false    | 如果为 true，则特征的收益替换底层地形的任何收益，而不是添加到它                                 |
-| unbuildable            | Boolean                                                             | false    | 如果为 true，则无法在此处建造任何东西 - 甚至无法建造资源改良设施                               |
-| impassable             | Boolean                                                             | false    | 没有单位可以进入，除非它具有特殊的独特能力                                                     |
-| movementCost           | Integer                                                             | 1        | 基础移动成本                                                                                    |
-| defenceBonus           | Float                                                               | 0        | 在此被攻击单位的战斗加成                                                                       |
-| RGB                    | [List of 3× Integer](其他JSON文件.md#rgb-颜色列表)                  | Gold     | 'Default'地形集显示的 RGB 颜色                                                                 |
-| uniques                | List of Strings                                                     | 空       | 此地形具有的[独特能力](../Unique能力列表.md)列表                                                |
-| civilopediaText        | List                                                                | 空       | 请参阅 [civilopediaText 章节](其他JSON文件.md#civilopedia-text)                                 |
+| 属性 | 类型 | 默认值 | 说明 |
+|------|------|--------|------|
+| name | String | 必需 | [^A] |
+| type | Enum | 必需 | Land、Water、TerrainFeature、NaturalWonder [^B] |
+| occursOn | List of Strings | none | 仅适用于地形特征和自然奇观：可以放置在其上的基础地形 |
+| turnsInto | String | none | 仅适用于自然奇观：可选的强制性基础地形 [^C] |
+| weight | Integer | 10 | 仅适用于自然奇观：被地图生成器选中的_相对_权重 |
+| [`<stats>`](#一般统计) | Float | 0 | 地块的每回合收益或加成收益 |
+| overrideStats | Boolean | false | 如果为 true，则特征的收益替换底层地形的任何收益，而不是添加到它 |
+| unbuildable | Boolean | false | 如果为 true，则无法在此处建造任何东西 - 甚至无法建造资源改良设施 |
+| impassable | Boolean | false | 没有单位可以进入，除非它具有特殊的独特能力 |
+| movementCost | Integer | 1 | 基础移动成本 |
+| defenceBonus | Float | 0 | 在此被攻击单位的战斗加成 |
+| RGB | [List of 3× Integer](其他JSON文件.md#rgb-颜色列表) | Gold | 'Default'地形集显示的 RGB 颜色 |
+| uniques | List of Strings | 空 | 此地形具有的[独特能力](../Unique能力列表.md)列表 |
+| civilopediaText | List | 空 | 请参阅 [civilopediaText 章节](其他JSON文件.md#civilopedia-text) |
 
 [^A]: 某些名称具有特殊含义。`Grassland` 在某些情况下用作回退 - 例如，文明百科更喜欢在其上显示 TerrainFeature，除非 `occursOn` 不为空且不包含它。
       `River` 被硬编码用于查找 [Stats](../Unique能力列表.md#global-uniques) 独特能力来确定实际河流提供的加成（记住，河流存在于边缘而不是地形上）。
@@ -75,18 +75,18 @@ title: 地图相关 JSON 文件
 
 每个资源具有以下结构：
 
-| 属性                     | 类型            | 默认值  | 说明                                                                                                                                       |
-|---------------------------|-----------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| name                      | String          | 必需     |                                                                                                                                             |
-| resourceType              | Enum            | Bonus    | Bonus、Luxury 或 Strategic                                                                                                                  |
-| terrainsCanBeFoundOn      | List of Strings | 空       | 可以找到此资源的地形。必须在 [Terrains.json](#terrainsjson) 中                                                                              |
-| [`<stats>`](#统计数据)    | Integer         | 0        | 地块的每回合加成收益                                                                                                                        |
-| improvementStats          | Object          | none     | 改良时的额外收益，请参阅[专业统计数据](地图相关JSON文件.md#专业统计数据)                                                                 |
-| revealedBy                | String          | none     | 查看、工作和改进此资源所需的技术名称                                                                                                         |
-| improvedBy                | List of strings | 空       | 获得此资源所需的改良设施。必须在 [TileImprovements.json](#tileimprovementsjson) 中                                                             |
-| improvement               | String          | none     | 获得此资源所需的改良设施。必须在 [TileImprovements.json](#tileimprovementsjson) 中（由于 `improvedBy` 而冗余）                                |
-| unique                    | List of Strings | 空       | 此资源具有的[独特能力](../Unique能力列表.md)列表                                                                                              |
-| civilopediaText           | List            | 空       | 请参阅 [civilopediaText 章节](其他JSON文件.md#civilopedia-text)                                                                               |
+| 属性 | 类型 | 默认值 | 说明 |
+|------|------|--------|------|
+| name | String | 必需 | |
+| resourceType | Enum | Bonus | Bonus、Luxury 或 Strategic |
+| terrainsCanBeFoundOn | List of Strings | 空 | 可以找到此资源的地形。必须在 [Terrains.json](#terrainsjson) 中 |
+| [`<stats>`](#统计数据) | Integer | 0 | 地块的每回合加成收益 |
+| improvementStats | Object | none | 改良时的额外收益，请参阅[专业统计数据](地图相关JSON文件.md#专业统计数据) |
+| revealedBy | String | none | 查看、工作和改进此资源所需的技术名称 |
+| improvedBy | List of strings | 空 | 获得此资源所需的改良设施。必须在 [TileImprovements.json](#tileimprovementsjson) 中 |
+| improvement | String | none | 获得此资源所需的改良设施。必须在 [TileImprovements.json](#tileimprovementsjson) 中（由于 `improvedBy` 而冗余） |
+| unique | List of Strings | 空 | 此资源具有的[独特能力](../Unique能力列表.md)列表 |
+| civilopediaText | List | 空 | 请参阅 [civilopediaText 章节](其他JSON文件.md#civilopedia-text) |
 
 ## Ruins.json
 
@@ -94,17 +94,17 @@ title: 地图相关 JSON 文件
 
 此可选文件包含古代遗迹可能给予的奖励。
 
-基础规则集模组可以省略文件，在这种情况下，它们从 Vanilla 规则集继承它们。但是，它们可以提供带有空列表（`[]`）的文件以避免这种情况。在这种情况下，不应该有具有 ["Provides a random bonus when entered" Unique](../Unique能力列表.md#improvement-uniques) 的改良设施。相反，如果有这样的改良设施，模组检查器会将空的 Ruins 文件标记为错误。
+基础规则集模组可以省略文件，在这种情况下，它们从 Vanilla 规则集继承它们。但是，它们可以提供带有空列表（`[]`）的文件以避免这种情况。在这种情况下，不应该有具有 `Provides a random bonus when entered` Unique 的改良设施。相反，如果有这样的改良设施，模组检查器会将空的 Ruins 文件标记为错误。
 
 文件中的每个对象代表你可以从遗迹获得的单个奖励。它具有以下结构：
 
-| 属性                 | 类型            | 默认值  | 说明                                                                                                                                                                                               |
-|-----------------------|-----------------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| name                  | String          | 必需     | 遗迹的名称。从不向用户显示，但它们必须区分开                                                                                                                                                             |
-| notification          | String          | 必需     | 选择此奖励时添加到用户的通知。如果省略，则显示空通知。某些通知可能具有参数，请参阅下表。                                                                                                                      |
-| weight                | Integer (≥0)    | 1        | 下次选择此奖励的_相对_权重 [^E]                                                                                                                                                                     |
-| uniques               | List of Strings | 空       | 进入遗迹时将触发的[独特能力](../Unique能力列表.md)列表。如果添加了超过 1 个 unique，由于错误（可能已过时），通知将显示多次                                                                                |
-| excludedDifficulties  | List of Strings | 空       | 可能_不会_授予此奖励的所有难度列表                                                                                                                                                                   |
+| 属性 | 类型 | 默认值 | 说明 |
+|------|------|--------|------|
+| name | String | 必需 | 遗迹的名称。从不向用户显示，但它们必须区分开 |
+| notification | String | 必需 | 选择此奖励时添加到用户的通知。如果省略，则显示空通知。某些通知可能具有参数，请参阅下表。 |
+| weight | Integer (≥0) | 1 | 下次选择此奖励的_相对_权重 [^E] |
+| uniques | List of Strings | 空 | 进入遗迹时将触发的[独特能力](../Unique能力列表.md)列表。如果添加了超过 1 个 unique，由于错误（可能已过时），通知将显示多次 |
+| excludedDifficulties | List of Strings | 空 | 可能_不会_授予此奖励的所有难度列表 |
 
 [^E]: 选择奖励的确切算法如下：
 
@@ -116,14 +116,14 @@ title: 地图相关 JSON 文件
 
 遗迹可以给予的一些奖励将具有在 JSON 中编写时不确定的结果，因此为此创建一个好的通知是不可能的。一个例子是 "Gain [50]-[100] [Gold]" unique，它将给予随机数量的金币。出于这个原因，我们允许某些通知具有参数，其中将填充值，例如 "You found [goldAmount] gold in the ruins!"。所有具有此属性的 unique 都可以在下面找到。
 
-| Unique                                           | 参数                                                                                                                                                         |
-|--------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Free [] found in the ruins                       | 单位的名称将填充到通知中，包括该国家的独特单位                                                                                                                   |
-| [] population in a random city                   | 人口添加到的城市的名称将填充到通知中                                                                                                                              |
-| Gain []-[] []                                    | 获得的统计数据的确切数量将填充到通知中                                                                                                                            |
-| [] free random reasearchable Tech(s) from the [] | 通知必须具有等于以这种方式授予的科技数量的占位符。这些免费科技中的每一个名称都将填充到通知中                                                                     |
-| Gain enough Faith for a Pantheon                 | 获得的信仰数量填充到通知中                                                                                                                                        |
-| Gain enough Faith for []% of a Great Prophet     | 获得的信仰数量填充到通知中                                                                                                                                        |
+| Unique | 参数 |
+|--------|------|
+| Free [] found in the ruins | 单位的名称将填充到通知中，包括该国家的独特单位 |
+| [] population in a random city | 人口添加到的城市的名称将填充到通知中 |
+| Gain []-[] [] | 获得的统计数据的确切数量将填充到通知中 |
+| [] free random reasearchable Tech(s) from the [] | 通知必须具有等于以这种方式授予的科技数量的占位符。这些免费科技中的每一个名称都将填充到通知中 |
+| Gain enough Faith for a Pantheon | 获得的信仰数量填充到通知中 |
+| Gain enough Faith for []% of a Great Prophet | 获得的信仰数量填充到通知中 |
 
 ### 特定的 uniques
 
@@ -139,16 +139,16 @@ title: 地图相关 JSON 文件
 
 模组可以定义新的地形集或添加到现有的地形集，即 FantasyHex。每个地形集有一个 json 文件，命名为与地形集相同，并放置在相对于其他 json 文件的名为 "TileSets" 的子文件夹中。这称为 TileSetConfig，具有以下结构：
 
-| 属性                                                                        | 类型    | 默认值      | 说明                                                                                                                              |
-|------------------------------------------------------------------------------|---------|--------------|------------------------------------------------------------------------------------------------------------------------------------|
-| [useColorAsBaseTerrain](../自定义地形集.md#usecolorasbaseterrain)             | Boolean | false        |                                                                                                                                    |
-| [useSummaryImages](../自定义地形集.md#usesummaryimages)                      | Boolean | false        |                                                                                                                                    |
-| [unexploredTileColor](../自定义地形集.md#unexploredtilecolor)                | Color   | Dark Gray    | `{"r":0.25,"g":0.25,"b":0.25,"a":1}`                                                                                               |
-| [fogOfWarColor](../自定义地形集.md#fogofwarcolor)                            | Color   | Black        | `{"r":0,"g":0,"b":0,"a":1}`                                                                                                        |
-| [fallbackTileSet](../自定义地形集.md#fallbacktileset)                        | String  | "FantasyHex" | null 以禁用                                                                                                                      |
-| [tileScale](../自定义地形集.md#tilescale)                                    | Float   | 1.0          | 所有地块的比例。可用于增加或减少每个地块的大小                                                                                      |
-| [tileScales](../自定义地形集.md#tilescales)                                  | Object  | empty        | 被 "Minimal" 地形集使用，将其所有地块（基础地形除外）缩小。覆盖指定地形的 `tileScale` 值                                            |
-| [ruleVariants](../自定义地形集.md#rulevariants)                              | Object  | empty        | [请参阅此处](#分层图像)                                                                                                              |
+| 属性 | 类型 | 默认值 | 说明 |
+|------|------|--------|------|
+| [useColorAsBaseTerrain](../自定义地形集.md#usecolorasbaseterrain) | Boolean | false | |
+| [useSummaryImages](../自定义地形集.md#usesummaryimages) | Boolean | false | |
+| [unexploredTileColor](../自定义地形集.md#unexploredtilecolor) | Color | Dark Gray | `{"r":0.25,"g":0.25,"b":0.25,"a":1}` |
+| [fogOfWarColor](../自定义地形集.md#fogofwarcolor) | Color | Black | `{"r":0,"g":0,"b":0,"a":1}` |
+| [fallbackTileSet](../自定义地形集.md#fallbacktileset) | String | "FantasyHex" | null 以禁用 |
+| [tileScale](../自定义地形集.md#tilescale) | Float | 1.0 | 所有地块的比例。可用于增加或减少每个地块的大小 |
+| [tileScales](../自定义地形集.md#tilescales) | Object | empty | 被 "Minimal" 地形集使用，将其所有地块（基础地形除外）缩小。覆盖指定地形的 `tileScale` 值 |
+| [ruleVariants](../自定义地形集.md#rulevariants) | Object | empty | [请参阅此处](#分层图像) |
 
 ### 分层图像
 
