@@ -6,7 +6,7 @@ title: Unique 能力列表
 
 > 由于此网站的主题插件的限制，本文的所有unique语句无法直接复制。如果你使用的是Edge浏览器，可以使用[Allow copy](https://microsoftedge.microsoft.com/addons/detail/allow-copy/ijekdgpkaednghahipmbbacnabibojeh)插件来强制复制；对于其他浏览器，请自行搜索相关插件。
 
-Uniques 概述可以在[这里](../代码贡献/Uniques 机制.md)找到。
+Uniques 概述可以在[这里](../代码贡献/Uniques%20机制.md)找到。
 
 简单的 Unique 参数在此文章末尾。复杂的参数在[Unique 参数类型](Unique参数详解.md)中说明。
 
