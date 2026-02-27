@@ -72,7 +72,7 @@ export default defineConfig({
               { text: '模组总览', link: '/开发者专区/模组开发/模组' },
               {
                 text: '模组文件结构',
-                collapsed: false,
+                collapsed: true,
                 items: [
                   { text: '概述', link: '/开发者专区/模组开发/模组文件结构/概述' },
                   { text: '文明相关 JSON 文件', link: '/开发者专区/模组开发/模组文件结构/文明相关JSON文件' },
