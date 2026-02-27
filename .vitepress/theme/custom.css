@@ -432,3 +432,109 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--vp-c-brand-2);
 }
+
+/* Details 标签样式 - 按钮文字高亮 */
+.vp-doc details {
+  margin: 1.5rem 0;
+  border: 1px solid var(--vp-c-brand-soft);
+  border-radius: var(--vp-radius-lg);
+  background: var(--vp-c-bg);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.vp-doc details:hover {
+  border-color: var(--vp-c-brand-1);
+  box-shadow: var(--vp-shadow-lg);
+}
+
+.vp-doc details[open] {
+  border-color: var(--vp-c-brand-1);
+}
+
+/* Summary 按钮样式 - 高亮显示 */
+.vp-doc details > summary {
+  cursor: pointer;
+  padding: 1rem 1.5rem 1rem 2.5rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--vp-c-brand-1);
+  background: linear-gradient(135deg, var(--vp-c-brand-soft) 0%, rgba(217, 140, 58, 0.25) 100%);
+  user-select: none;
+  list-style: none;
+  display: block;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* 移除默认的三角形图标 */
+.vp-doc details > summary::-webkit-details-marker {
+  display: none;
+}
+
+/* 自定义箭头图标 - 使用绝对定位 */
+.vp-doc details > summary::before {
+  content: '';
+  position: absolute;
+  left: 1.25rem;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid var(--vp-c-brand-1);
+  border-bottom: 2px solid var(--vp-c-brand-1);
+  transition: transform 0.3s ease;
+}
+
+.vp-doc details[open] > summary::before {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+/* 悬停效果 */
+.vp-doc details > summary:hover {
+  background: linear-gradient(135deg, rgba(217, 140, 58, 0.25) 0%, rgba(166, 93, 37, 0.35) 100%);
+  color: var(--vp-c-brand-2);
+  transform: translateX(4px);
+}
+
+/* Details 内容区域容器 - 不高亮 */
+.vp-doc details > summary + * {
+  padding: 1rem 1.5rem;
+  margin: 0;
+}
+
+/* Details 内容区域内的元素 - 不高亮 */
+.vp-doc details p,
+.vp-doc details div,
+.vp-doc details ul,
+.vp-doc details ol,
+.vp-doc details li {
+  color: var(--vp-c-text-1);
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+/* Details 内的代码块保持原有样式 */
+.vp-doc details code,
+.vp-doc details pre {
+  /* 不覆盖颜色，保持原有的代码高亮样式 */
+}
+
+/* 深色模式下的 Details 样式 */
+.dark .vp-doc details {
+  background: rgba(217, 140, 58, 0.05);
+  border-color: rgba(217, 140, 58, 0.15);
+}
+
+.dark .vp-doc details > summary {
+  background: linear-gradient(135deg, rgba(217, 140, 58, 0.1) 0%, rgba(217, 140, 58, 0.15) 100%);
+  color: var(--vp-c-brand-1);
+}
+
+.dark .vp-doc details > summary:hover {
+  background: linear-gradient(135deg, rgba(217, 140, 58, 0.15) 0%, rgba(217, 140, 58, 0.25) 100%);
+}
+
+.dark .vp-doc details > summary::before {
+  border-color: var(--vp-c-brand-1);
+}
