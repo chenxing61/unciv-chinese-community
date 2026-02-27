@@ -38,8 +38,6 @@ features:
 
 ---
 
-<!--markdownlint-disable MD041-->
-
 ## 💡 如何浏览文档
 
 ::: tip 导航提示

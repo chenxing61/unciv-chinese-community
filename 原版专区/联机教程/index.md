@@ -2,8 +2,6 @@
 title: Unciv 联机教程
 ---
 
-<!-- markdownlint-disable MD025 -->
-
 # Unciv 联机教程
 
 > 作者：SpringPizazz

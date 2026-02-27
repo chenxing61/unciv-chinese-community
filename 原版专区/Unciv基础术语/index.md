@@ -2,8 +2,6 @@
 title: Unciv 基础术语
 ---
 
-<!-- markdownlint-disable MD025 -->
-
 # Unciv 基础术语
 
 > 作者：unciv 贴吧及文明 5 贴吧

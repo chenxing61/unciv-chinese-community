@@ -2,9 +2,6 @@
 title: Unciv鳇脯菌校：全局篇
 ---
 
-<!-- markdownlint-disable MD025 -->
-<!-- markdownlint-disable MD030 -->
-
 # Unciv鳇脯菌校：全局篇
 
 > 作者：遗封

@@ -2,9 +2,6 @@
 title: 自主左二前应该做什么？——自主0-40T发育流程简析
 ---
 
-<!-- markdownlint-disable MD025 -->
-<!-- markdownlint-disable MD045 -->
-
 # 自主左二前应该做什么？——自主0-40T发育流程简析
 
 > 作者：华花

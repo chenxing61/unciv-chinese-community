@@ -69,20 +69,27 @@ export default defineConfig({
             text: '模组开发',
             collapsed: true,
             items: [
-              { text: '模组开发入门', link: '/开发者专区/模组开发/模组开发入门/' },
-              { text: '创建新文明', link: '/开发者专区/模组开发/创建新文明/' },
-              { text: 'Uniques 系统', link: '/开发者专区/模组开发/Uniques 系统/' },
-              { text: 'Unique 参数', link: '/开发者专区/模组开发/Unique 参数/' },
-              { text: '条件 Uniques', link: '/开发者专区/模组开发/条件 Uniques/' },
-              { text: '触发条件 Uniques', link: '/开发者专区/模组开发/触发条件 Uniques/' },
-              { text: '图像和音频', link: '/开发者专区/模组开发/图像和音频/' },
-              { text: '自定义地形集', link: '/开发者专区/模组开发/自定义地形集/' },
-              { text: '创建 UI 皮肤', link: '/开发者专区/模组开发/创建 UI 皮肤/' },
-              { text: '场景编辑', link: '/开发者专区/模组开发/场景编辑/' },
-              { text: '类型检查', link: '/开发者专区/模组开发/类型检查/' },
-              { text: 'Mod 文件结构', link: '/开发者专区/模组开发/Mod 文件结构/' },
-              { text: 'Mod 文件结构详解', link: '/开发者专区/模组开发/Mod 文件结构详解/' },
-              { text: '杂项 JSON 文件说明', link: '/开发者专区/模组开发/杂项 JSON 文件说明/' }
+              { text: '模组总览', link: '/开发者专区/模组开发/模组.md' },
+              {
+                text: '模组文件结构',
+                collapsed: false,
+                items: [
+                  { text: '概述', link: '/开发者专区/模组开发/模组文件结构/概述.md' },
+                  { text: '文明相关 JSON 文件', link: '/开发者专区/模组开发/模组文件结构/文明相关JSON文件.md' },
+                  { text: '地图相关 JSON 文件', link: '/开发者专区/模组开发/模组文件结构/地图相关JSON文件.md' },
+                  { text: '单位相关 JSON 文件', link: '/开发者专区/模组开发/模组文件结构/单位相关JSON文件.md' },
+                  { text: '其他 JSON 文件', link: '/开发者专区/模组开发/模组文件结构/其他JSON文件.md' }
+                ]
+              },
+              { text: '创建新文明', link: '/开发者专区/模组开发/创建新文明.md' },
+              { text: '图像和音频资源', link: '/开发者专区/模组开发/图像和音频资源.md' },
+              { text: '自定义地形集', link: '/开发者专区/模组开发/自定义地形集.md' },
+              { text: '创建 UI 皮肤', link: '/开发者专区/模组开发/创建UI皮肤.md' },
+              { text: '场景制作', link: '/开发者专区/模组开发/场景制作.md' },
+              { text: 'Unique 参数详解', link: '/开发者专区/模组开发/Unique参数详解.md' },
+              { text: 'Unique 能力列表', link: '/开发者专区/模组开发/Unique能力列表.md' },
+              { text: '类型检查', link: '/开发者专区/模组开发/类型检查.md' },
+              { text: '自动更新指南', link: '/开发者专区/模组开发/自动更新指南.md' }
             ]
           },
           {

@@ -2,9 +2,6 @@
 title: 更新日志
 ---
 
-<!-- markdownlint-disable MD024 -->
-<!-- markdownlint-disable MD025 -->
-
 ## 📌 版本历史
 
 ::: tip 最新版本

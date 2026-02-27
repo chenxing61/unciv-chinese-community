@@ -2,9 +2,6 @@
 title: 众神与国王入门指南
 ---
 
-<!-- markdownlint-disable MD025 -->
-<!-- markdownlint-disable MD045 -->
-
 # 众神与国王入门指南
 
 > 作者：恶
