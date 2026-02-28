@@ -7,7 +7,6 @@
 **开源策略游戏 Unciv 的中文社区文档**
 
 [![VitePress](https://img.shields.io/badge/VitePress-1.5.0-blue)](https://vitepress.dev/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 [访问网站](https://autumnpizazz.github.io/unciv-chinese-community/) · [GitHub 仓库](https://github.com/AutumnPizazz/unciv-chinese-community) · [QQ 群](https://qm.qq.com/q/G5lpttg688)
 
@@ -95,7 +94,7 @@ npm run docs:preview
 
 1. [项目结构](开发者专区/代码贡献/项目结构/) - 了解 Unciv 的代码组织
 2. [代码标准](开发者专区/代码贡献/代码标准/) - 遵循 Unciv 的代码规范
-3. [构建和部署](开发者专区/代码贡献/构建和部署/) - 了解项目的构建流程
+3. [构建和部署](开发者专区/代码贡献/构建和部署.md) - 了解项目的构建流程
 
 ---
 
