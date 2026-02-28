@@ -14,36 +14,36 @@ title: 其他 JSON 文件
 
 每个难度级别具有以下结构：
 
-| 属性                            | 类型            | 默认值  | 说明                                                                                                                                                                                                                      |
-|----------------------------------|-----------------|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| name                             | String          | 必需     |                                                                                                                                                                                                                            |
-| baseHappiness                    | Integer         | 0        |                                                                                                                                                                                                                            |
-| extraHappinessPerLuxury          | Float           | 0        |                                                                                                                                                                                                                            |
-| researchCostModifier             | Float           | 1        |                                                                                                                                                                                                                            |
-| unitCostModifier                 | Float           | 1        |                                                                                                                                                                                                                            |
-| unitSupplyBase                   | Integer         | 5        |                                                                                                                                                                                                                            |
-| unitSupplyPerCity                | Integer         | 2        |                                                                                                                                                                                                                            |
-| buildingCostModifier             | Float           | 1        |                                                                                                                                                                                                                            |
-| policyCostModifier               | Float           | 1        |                                                                                                                                                                                                                            |
-| unhappinessModifier              | Float           | 1        |                                                                                                                                                                                                                            |
-| barbarianBonus                   | Float           | 0        |                                                                                                                                                                                                                            |
-| barbarianSpawnDelay              | Integer         | 0        |                                                                                                                                                                                                                            |
-| playerBonusStartingUnits         | List of Strings | 空       | 也可以是 'Era Starting Unit'，映射到 Eras 文件的 `startingMilitaryUnit`。所有其他单位必须在 [Units.json](单位相关JSON文件.md#unitsjson) 中。仅适用于人类玩家文明               |
-| aiDifficultyLevel                | String          | 空       | 从选择的难度对 AI 应用一些修饰符。诸如 unhappinessModifier 和 aiUnhappinessModifier 等修饰符会相乘堆叠。如果为空：默认为 "Chieftain" 或第一个可用的难度。                |
-| aiCityGrowthModifier             | Float           | 1        |                                                                                                                                                                                                                            |
-| aiUnitCostModifier               | Float           | 1        |                                                                                                                                                                                                                            |
-| aiBuildingCostModifier           | Float           | 1        |                                                                                                                                                                                                                            |
-| aiWonderCostModifier             | Float           | 1        |                                                                                                                                                                                                                            |
-| aiBuildingMaintenanceModifier    | Float           | 1        |                                                                                                                                                                                                                            |
-| aiUnitMaintenanceModifier        | Float           | 1        |                                                                                                                                                                                                                            |
-| aiUnitSupplyModifier             | Integer         | 5        |                                                                                                                                                                                                                            |
-| aiFreeTechs                      | List of Strings | 空       | 必须在 [Techs.json](文明相关JSON文件.md#techsjson) 中                                                                                                        |
-| aiMajorCivBonusStartingUnits     | List of Strings | 空       | 与 playerBonusStartingUnits 相同的规则，请参阅上文。仅适用于 AI 主要文明                                                                                          |
-| aiCityStateBonusStartingUnits    | List of Strings | 空       | 与 playerBonusStartingUnits 相同的规则，请参阅上文。仅适用于城邦文明                                                                                              |
-| aiUnhappinessModifier            | Float           | 1        |                                                                                                                                                                                                                            |
-| turnBarbariansCanEnterPlayerTiles | Integer         | 0        |                                                                                                                                                                                                                            |
-| clearBarbarianCampReward         | Integer         | 25       |                                                                                                                                                                                                                            |
-| uniques                          | List of Strings | 空       | 选择此难度时将被视为 GlobalUniques 的一部分                                                                                                                                                                            |
+| 属性 | 类型 | 默认值 | 说明 |
+|------|------|--------|------|
+| name | String | 必需 | |
+| baseHappiness | Integer | 0 | |
+| extraHappinessPerLuxury | Float | 0 | |
+| researchCostModifier | Float | 1 | |
+| unitCostModifier | Float | 1 | |
+| unitSupplyBase | Integer | 5 | |
+| unitSupplyPerCity | Integer | 2 | |
+| buildingCostModifier | Float | 1 | |
+| policyCostModifier | Float | 1 | |
+| unhappinessModifier | Float | 1 | |
+| barbarianBonus | Float | 0 | |
+| barbarianSpawnDelay | Integer | 0 | |
+| playerBonusStartingUnits | List of Strings | 空 | 也可以是 'Era Starting Unit'，映射到 Eras 文件的 `startingMilitaryUnit`。所有其他单位必须在 [Units.json](单位相关JSON文件.md#unitsjson) 中。仅适用于人类玩家文明 |
+| aiDifficultyLevel | String | 空 | 从选择的难度对 AI 应用一些修饰符。诸如 unhappinessModifier 和 aiUnhappinessModifier 等修饰符会相乘堆叠。如果为空：默认为 "Chieftain" 或第一个可用的难度。 |
+| aiCityGrowthModifier | Float | 1 | |
+| aiUnitCostModifier | Float | 1 | |
+| aiBuildingCostModifier | Float | 1 | |
+| aiWonderCostModifier | Float | 1 | |
+| aiBuildingMaintenanceModifier | Float | 1 | |
+| aiUnitMaintenanceModifier | Float | 1 | |
+| aiUnitSupplyModifier | Integer | 5 | |
+| aiFreeTechs | List of Strings | 空 | 必须在 [Techs.json](文明相关JSON文件.md#techsjson) 中 |
+| aiMajorCivBonusStartingUnits | List of Strings | 空 | 与 playerBonusStartingUnits 相同的规则，请参阅上文。仅适用于 AI 主要文明 |
+| aiCityStateBonusStartingUnits | List of Strings | 空 | 与 playerBonusStartingUnits 相同的规则，请参阅上文。仅适用于城邦文明 |
+| aiUnhappinessModifier | Float | 1 | |
+| turnBarbariansCanEnterPlayerTiles | Integer | 0 | |
+| clearBarbarianCampReward | Integer | 25 | |
+| uniques | List of Strings | 空 | 选择此难度时将被视为 GlobalUniques 的一部分 |
 
 ## Eras.json
 
@@ -53,26 +53,27 @@ title: 其他 JSON 文件
 
 每个时代可以具有以下属性：
 
-| 属性                       | 类型                                   | 默认值         | 说明                                                                                                                                                                                                                                         |
-|-----------------------------|----------------------------------------|-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| name                        | String                                 | 必需           |                                                                                                                                                                                                                                              |
-| researchAgreementCost      | Integer (≥0)                           | 300             | 当科技最先进的文明处于此时代时，研究协议的成本                                                                                                                                                                                         |
-| iconRGB                    | [List of 3× Integer](#rgb-颜色列表)      | white           | 此时代的科技图标在科技屏幕中应具有的 RGB 颜色                                                                                                                                                                                     |
-| startingSettlerCount       | Integer (≥0)                           | 1               | 在此时代开始游戏时应生成的定居者单位数量（不建议将其设置为零 [^1]）                                                                                                                                                                           |
-| startingSettlerUnit        | String                                 | "Settler"       | 应用于前一个字段的单位名称。必须在 [Units.json](单位相关JSON文件.md#unitsjson) 中，或者必须存在具有 "Founds a new city" unique 的单位                                                       |
-| startingWorkerCount       | Integer (≥0)                           | 0               | 在此时代开始游戏时应生成的工人单位数量                                                                                                                                                                                             |
-| startingWorkerUnit        | String                                 | "Worker"        | 应用于前一个字段的单位名称。如果 startingWorkerCount>0，则它必须存在于 [Units.json](单位相关JSON文件.md#unitsjson) 中，或者必须存在具有 "Can build [filter] improvements on tiles" unique 的单位 |
-| startingMilitaryUnitCount | Integer (≥0)                           | 1               | 在此时代开始游戏时应生成的军事单位数量                                                                                                                                                                                             |
-| startingMilitaryUnit      | String                                 | "Warrior"       | 应用于前一个字段的单位名称。必须在 [Units.json](单位相关JSON文件.md#unitsjson) 中                                                                                                                                                                 |
-| startingGold               | Integer (≥0)                           | 0               | 每个文明在此时代开始游戏时应收到的金币数量                                                                                                                                                                                             |
-| startingCulture            | Integer (≥0)                           | 0               | 每个文明在此时代开始游戏时应收到的文化数量                                                                                                                                                                                            |
-| settlerPopulation          | Integer (>0)                           | 1               | 在此时代开始游戏时定居时每个城市应有的人口数量                                                                                                                                                                                           |
-| settlerBuildings           | List of Strings                        | 空              | 在此时代开始游戏时每当建立城市时应自动建造的建筑                                                                                                                                                                                        |
-| startingObsoleteWonders    | List of Strings                        | 空              | 在此时代开始游戏时应无法建造的奇观（以及技术上建筑）。在基础游戏中用于移除所有早于 2 个时代的奇观                                                                                                                                           |
-| baseUnitBuyCost            | Integer                                | 200             | 用于独特能力 "Can be purchased with [stat] [cityFilter]" 的默认值                                                                                                                                                                        |
-| embarkDefense              | Integer                                | 3               | 此时代中登船单位的默认防御力                                                                                                                                                                                                   |
-| startPercent               | Integer                                | 0               | 开始时，在 [Speed.json](#speedsjson) 中指定的总回合数中跳过的百分比（\[0\]%-\[100\]）                                                                                                                                             |
-| citySound                   | String                                 | "cityClassical" | 在此时代建立城市时使用的声音                                                                                                                                                                                                 |
+| 属性 | 类型 | 默认值 | 说明 |
+|------|------|--------|------|
+| name | String | 必需 | |
+| researchAgreementCost | Integer (≥0) | 300 | 当科技最先进的文明处于此时代时，研究协议的成本 |
+| iconRGB | [List of 3× Integer](#rgb-颜色列表) | white | 此时代的科技图标在科技屏幕中应具有的 RGB 颜色 |
+| startingSettlerCount | Integer (≥0) | 1 | 在此时代开始游戏时应生成的定居者单位数量（不建议将其设置为零 [^1]） |
+| startingSettlerUnit | String | "Settler" | 应用于前一个字段的单位名称。必须在 [Units.json](单位相关JSON文件.md#unitsjson) 中，或者必须存在具有 "Founds a new city" unique 的单位 |
+| startingWorkerCount | Integer (≥0) | 0 | 在此时代开始游戏时应生成的工人单位数量 |
+| startingWorkerUnit | String | "Worker" | 应用于前一个字段的单位名称。如果 startingWorkerCount>0，则它必须存在于 [Units.json](单位相关JSON文件.md#unitsjson) 中，或者必须存在具有 "Can build [filter] improvements on tiles" unique 的单位 |
+| startingMilitaryUnitCount | Integer (≥0) | 1 | 在此时代开始游戏时应生成的军事单位数量 |
+| startingMilitaryUnit | String | "Warrior" | 应用于前一个字段的单位名称。必须在 [Units.json](单位相关JSON文件.md#unitsjson) 中 |
+| startingGold | Integer (≥0) | 0 | 每个文明在此时代开始游戏时应收到的金币数量 |
+| startingCulture | Integer (≥0) | 0 | 每个文明在此时代开始游戏时应收到的文化数量 |
+| settlerPopulation | Integer (>0) | 1 | 在此时代开始游戏时定居时每个城市应有的人口数量 |
+| settlerBuildings | List of Strings | 空 | 在此时代开始游戏时每当建立城市时应自动建造的建筑 |
+| startingObsoleteWonders | List of Strings | 空 | 在此时代开始游戏时应无法建造的奇观（以及技术上建筑）。在基础游戏中用于移除所有早于 2 个时代的奇观 |
+| baseUnitBuyCost | Integer | 200 | 用于独特能力 "Can be purchased with [stat] [cityFilter]" 的默认值 |
+| embarkDefense | Integer | 3 | 此时代中登船单位的默认防御力 |
+| startPercent | Integer | 0 | 开始时，在 [Speed.json](#speedsjson) 中指定的总回合数中跳过的百分比（\[0\]%-\[100\]） |
+| citySound | String | "cityClassical" | 在此时代建立城市时使用的声音 |
+| uniques | List of Strings | 空 | 进入此时代后应用这批uniques作为等价的全局uniques |
 
 [^1]: 在模组中成功将 startingSettlerCount 设置为零（想法：征服或死亡）并不容易。某些玩家控制的设置需要至少一个定居者，通过任何来源（请参阅难度设置以了解其他可能的定居者来源），否则你将无法开始游戏：一旦城市挑战需要所有玩家都有一个，并且允许任何城邦需要那些城邦有一个。还会影响失败规则。
 
@@ -86,36 +87,35 @@ title: 其他 JSON 文件
 
 每个速度可以具有以下属性：
 
-| 属性                              | 类型            | 默认值          | 说明                                                                                                       |
-|------------------------------------|-----------------|------------------|-------------------------------------------------------------------------------------------------------------|
-| name                               | String          | 必需             | 速度的名称                                                                                               |
-| modifier                           | Float (≥0)      | 1.0              | 整体游戏速度修饰符                                                                                         |
-| productionCostModifier             | Float (≥0)      | `modifier` 值    | 缩放单位和建筑的生产成本                                                                                   |
-| goldCostModifier                   | Float (≥0)      | `modifier` 值    | 缩放金币成本                                                                                               |
-| scienceCostModifier                | Float (≥0)      | `modifier` 值    | 缩放科学成本                                                                                               |
-| cultureCostModifier                | Float (≥0)      | `modifier` 值    | 缩放文化成本                                                                                               |
-| faithCostModifier                  | Float (≥0)      | `modifier` 值    | 缩放信仰成本                                                                                               |
-| improvementBuildLengthModifier     | Float (≥0)      | `modifier` 值    | 缩放工人建造地块改良设施所需的时间                                                                           |
-| barbarianModifier                  | Float (≥0)      | `modifier` 值    | 缩放野蛮人生成之间的时间                                                                                     |
-| goldGiftModifier                   | Float (≥0)      | `modifier` 值    | 缩放向城邦赠送金币获得的影响力                                                                               |
-| cityStateTributeScalingInterval    | Float (≥0)      | 6.5              | 玩家向城邦索要的金币数量增加 5 金币所需的回合数                                                               |
-| goldenAgeLengthModifier            | Float (≥0)      | `modifier` 值    | 缩放黄金时代的长度                                                                                           |
-| religiousPressureAdjacentCity      | Integer (≥0)    | 6                | 定义一个城市对附近城市施加的宗教压力                                                                        |
-| peaceDealDuration                  | Integer (≥0)    | 10               | 和平协议持续的回合数                                                                                         |
-| dealDuration                       | Integer (≥0)    | 30               | 非和平协议（研究协议、开放边界等）持续的回合数                                                               |
-| startYear                          | Float           | -4000            | 游戏的起始年份（负数为公元前）                                                                               |
-| turns                              | List            | 必需             | 每回合的时间间隔列表，[请参阅下文](#每回合时间间隔)                                                               |
-| uniques                            | List of Strings | 空               | 选择此速度时将被视为 GlobalUniques 的一部分                                                                    |
-
+| 属性 | 类型 | 默认值 | 说明 |
+|------|------|--------|------|
+| name | String | 必需 | 速度的名称 |
+| modifier | Float (≥0) | 1.0 | 整体游戏速度修饰符 |
+| productionCostModifier | Float (≥0) | `modifier` 值 | 缩放单位和建筑的生产成本 |
+| goldCostModifier | Float (≥0) | `modifier` 值 | 缩放金币成本 |
+| scienceCostModifier | Float (≥0) | `modifier` 值 | 缩放科学成本 |
+| cultureCostModifier | Float (≥0) | `modifier` 值 | 缩放文化成本 |
+| faithCostModifier | Float (≥0) | `modifier` 值 | 缩放信仰成本 |
+| improvementBuildLengthModifier | Float (≥0) | `modifier` 值 | 缩放工人建造地块改良设施所需的时间 |
+| barbarianModifier | Float (≥0) | `modifier` 值 | 缩放野蛮人生成之间的时间 |
+| goldGiftModifier | Float (≥0) | `modifier` 值 | 缩放向城邦赠送金币获得的影响力 |
+| cityStateTributeScalingInterval | Float (≥0) | 6.5 | 玩家向城邦索要的金币数量增加 5 金币所需的回合数 |
+| goldenAgeLengthModifier | Float (≥0) | `modifier` 值 | 缩放黄金时代的长度 |
+| religiousPressureAdjacentCity | Integer (≥0) | 6 | 定义一个城市对附近城市施加的宗教压力 |
+| peaceDealDuration | Integer (≥0) | 10 | 和平协议持续的回合数 |
+| dealDuration | Integer (≥0) | 30 | 非和平协议（研究协议、开放边界等）持续的回合数 |
+| startYear | Float | -4000 | 游戏的起始年份（负数为公元前） |
+| turns | List | 必需 | 每回合的时间间隔列表，[请参阅下文](#每回合时间间隔) |
+| uniques | List of Strings | 空 | 选择此速度时将被视为 GlobalUniques 的一部分 |
 
 ### 每回合时间间隔
 
 "turns" 属性定义回合之间经过的年数。该属性由对象列表组成，每个对象具有 2 个必需属性："yearsPerTurn"（Float）和 "untilTurn"（Integer）
 
-| 属性        | 类型    | 默认值  | 说明                           |
-|--------------|---------|----------|--------------------------------|
-| yearsPerTurn | Integer | 必需     | 回合之间经过的年数             |
-| untilTurn    | Integer | 必需     | 此间隔的结束（如果是最后一个对象，请参阅下文） |
+| 属性 | 类型 | 默认值 | 说明 |
+|---|---|---|---|
+| yearsPerTurn | Integer | 必需 | 回合之间经过的年数 |
+| untilTurn | Integer | 必需 | 此间隔的结束（如果是最后一个对象，请参阅下文） |
 
 对于每一行，"yearsPerTurn" 应用于从 "untilTurn"-1 到 "untilTurn" 步骤。
 列表中最后一个 "untilTurn" 在年份计算中被忽略，即如果游戏超过了该回合数，年份将继续按最后一个条目的 "yearsPerTurn" 增加。
@@ -134,14 +134,13 @@ title: 其他 JSON 文件
 
 事件允许用户在触发器的选项之间进行选择以激活。
 
-| 属性            | 类型                                | 默认值  | 说明                                                                                                                      |
-|------------------|-------------------------------------|----------|---------------------------------------------------------------------------------------------------------------------------|
-| name             | String                              | 必需     | 用于通过 "Triggers a [event] event" unique 进行触发                                                                         |
-| text             | String                              | None     | 向用户显示的风味文字                                                                                                      |
-| presentation     | One of: "None", "Alert", "Floating" | Alert    | "Alert" 表示常规弹出窗口，"None" 表示随机选择，"Floating" 用于教程风格的指示器                                              |
-| civilopediaText  | List                                | 可选     | 请参阅 [civilopediaText 章节](其他JSON文件.md#civilopedia-text)                                                              |
-| choices          | List of EventChoices                |          | 用户可以选择触发其中一个可行的选择                                                                                       |
-
+| 属性 | 类型 | 默认值 | 说明 |
+|------|------|--------|------|
+| name | String | 必需 | 用于通过 "Triggers a [event] event" unique 进行触发 |
+| text | String | None | 向用户显示的风味文字 |
+| presentation | One of: "None", "Alert", "Floating" | Alert | "Alert" 表示常规弹出窗口，"None" 表示随机选择，"Floating" 用于教程风格的指示器 |
+| civilopediaText | List | 可选 | 请参阅 [civilopediaText 章节](其他JSON文件.md#civilopedia-text) |
+| choices | List of EventChoices | | 用户可以选择触发其中一个可行的选择 |
 
 你可以使用 text 和/或 civilopediaText，如果两者都存在，则两者都显示（但为什么呢？）
 
@@ -288,13 +287,13 @@ title: 其他 JSON 文件
 
 这些值不会单独合并，只会合并整个子结构。
 
-| 属性         | 类型  |    | 说明 |
-|---------------|-------|----|-------|
-| base          | Float | 10 |       |
-| perProduction | Float | 2  |       |
-| eraMultiplier | Float | 0  |       |
-| exponent      | Float | 1  |       |
-| roundTo       | Int   | 5  |       |
+| 属性 | 类型 | 默认值 | 说明 |
+|------|------|--------|------|
+| base | Float | 10 | |
+| perProduction | Float | 2 | |
+| eraMultiplier | Float | 0 | |
+| exponent | Float | 1 | |
+| roundTo | Int | 5 | |
 
 单位升级的金币成本公式是（向下舍入到 `roundTo` 的倍数）：
         (
