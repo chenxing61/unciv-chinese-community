@@ -12,3 +12,5 @@ CLAUDE.md
 .gemini/
 .claude/
 .ai/
+/.aionrs
+/temp
