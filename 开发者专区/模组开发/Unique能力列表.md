@@ -2,6 +2,11 @@
 title: Unique 能力列表
 ---
 
+<!-- 
+匹配summary代码块中错误位置的中文的正则表达式：
+<summary>((?:<[^>]*>|[^<])*?[\u4e00-\u9fff](?:<[^>]*>|[^<])*?)</summary> 
+-->
+
 # Unique 能力列表
 
 > 由于此网站的主题插件的限制，本文的所有unique语句无法直接复制。如果你使用的是Edge浏览器，可以使用[Allow copy](https://microsoftedge.microsoft.com/addons/detail/allow-copy/ijekdgpkaednghahipmbbacnabibojeh)插件来强制复制；对于其他浏览器，请自行搜索相关插件。
