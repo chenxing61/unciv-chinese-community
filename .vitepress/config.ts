@@ -59,6 +59,13 @@ export default defineConfig({
               { text: '更新计划', link: '/模组专区/CoeHarMod/更新日志/更新计划/' }
             ]
           },
+          {
+            text: 'Emperors and Deities',
+            collapsed: true,
+            items: [
+              { text: '模组介绍', link: '/模组专区/Emperors and Deities/' },
+            ]
+          },
         ]
       },
       {
